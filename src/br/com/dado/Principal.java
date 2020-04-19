@@ -6,9 +6,9 @@ public class Principal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner entrada = new Scanner(System.in);
-		int cont1 = 0, cont2 = 0, sair;
-				
+		
+		int cont1 = 0, cont2 = 0, sair ;
+
 		
 		System.out.print("Jogo inspirado em nosso excelentíssimo professor Luiz Mário,\nque amamos muito, muito, muito, muito, mesmo \ndigas de nomes, o dele [Luiz Mário]  e o seu. \nBom Jogo! ;)\n\n");
 		
@@ -16,7 +16,8 @@ public class Principal {
 		Pessoa alunoRenatoSeEsforcandoComJava = new Pessoa();
 
 		do {
-		
+			Scanner entrada = new Scanner(System.in);
+			
 			System.out.print("Digite o nome do professor: ");
 			professorLuizBondoso.setNome(entrada.nextLine());
 			
@@ -74,10 +75,11 @@ public class Principal {
 			
 			System.out.print("\nPara Jogar novamente digite 1 para sair digite 0:");
 			sair = entrada.nextInt();
-			
+		
 			if(sair != 1) {
 				System.out.print("\nFim de jogo!");
 			}
+			
 		} while (sair == 1);
 			
 	
